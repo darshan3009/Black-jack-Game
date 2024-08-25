@@ -1,0 +1,10 @@
+data.db{
+    userdata{
+        username: [varchar(100), primary key,]
+        password: [varchar(100)]
+        balance: [int]
+        played: [int]
+        won: [int]
+        loss: [int]
+    }
+}
