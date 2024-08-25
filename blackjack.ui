@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Blackjack">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>996</width>
+    <height>693</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="background" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1000</width>
+     <height>700</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(50, 50, 50)</string>
+   </property>
+   <widget class="QLabel" name="playercard3">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>350</y>
+      <width>150</width>
+      <height>215</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: green; border: 2px solid rgb(50,50,50);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../../image/2_of_club.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="spushbutton">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>600</y>
+      <width>150</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+background-color: rgb(182, 182, 182);</string>
+    </property>
+    <property name="text">
+     <string>Shuffle Start/Over</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="stand">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>600</y>
+      <width>150</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(182, 182, 182);</string>
+    </property>
+    <property name="text">
+     <string>Stand </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="playercard2">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>350</y>
+      <width>150</width>
+      <height>215</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: green; border: 2px solid rgb(50,50,50);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../../image/2_of_club.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="plabel">
+    <property name="geometry">
+     <rect>
+      <x>55</x>
+      <y>309</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: green; border: 2px solid rgb(50,50,50);</string>
+    </property>
+    <property name="text">
+     <string>Player</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="hitme">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>600</y>
+      <width>150</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(182, 182, 182);</string>
+    </property>
+    <property name="text">
+     <string>Hit Me !!</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="playercard4">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>350</y>
+      <width>150</width>
+      <height>215</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: green; border: 2px solid rgb(50,50,50);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../../image/2_of_club.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="playercard5">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>350</y>
+      <width>150</width>
+      <height>215</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: green; border: 2px solid rgb(50,50,50);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../../image/2_of_club.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="dlabel">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>35</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: green; border: 2px solid rgb(50,50,50);</string>
+    </property>
+    <property name="text">
+     <string>Dealer</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="dealercard2">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>80</y>
+      <width>150</width>
+      <height>215</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: green; border: 2px solid rgb(50,50,50);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../../image/back.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="dealercard1">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>80</y>
+      <width>150</width>
+      <height>215</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: green; border: 2px solid rgb(50,50,50);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../../image/back.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="dealercard5">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>80</y>
+      <width>150</width>
+      <height>215</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: green; border: 2px solid rgb(50,50,50);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../../image/back.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="playercard1">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>350</y>
+      <width>150</width>
+      <height>215</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: green; border: 2px solid rgb(50,50,50);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../../image/2_of_club.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>940</width>
+      <height>640</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: green;border: 20px;</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="stats">
+     <property name="geometry">
+      <rect>
+       <x>800</x>
+       <y>554</y>
+       <width>131</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>10</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(111, 111, 111);
+border: 2px solid black;</string>
+     </property>
+     <property name="text">
+      <string>Balance: 
+Played:
+Win:
+Loss:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="dealercard4">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>80</y>
+      <width>150</width>
+      <height>215</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: green; border: 2px solid rgb(50,50,50);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../../image/back.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="dealercard3">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>80</y>
+      <width>150</width>
+      <height>215</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: green; border: 2px solid rgb(50,50,50);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../../image/back.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <zorder>frame</zorder>
+   <zorder>playercard3</zorder>
+   <zorder>spushbutton</zorder>
+   <zorder>stand</zorder>
+   <zorder>playercard2</zorder>
+   <zorder>plabel</zorder>
+   <zorder>hitme</zorder>
+   <zorder>playercard4</zorder>
+   <zorder>playercard5</zorder>
+   <zorder>dlabel</zorder>
+   <zorder>dealercard2</zorder>
+   <zorder>dealercard1</zorder>
+   <zorder>dealercard5</zorder>
+   <zorder>playercard1</zorder>
+   <zorder>dealercard4</zorder>
+   <zorder>dealercard3</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
